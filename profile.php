@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>ETS - My Dashboard</title>
+	<link rel="stylesheet" href="styles.css">
+	<style> 
+		 #connect a { 
+			color: #fff;
+			text-decoration: none;
+		 }
+		 
+		.dashboard li {
+			background-color: #fff; 
+		}
+		  
+		.profile-bg {
+			position: absolute;
+			width: 100vw;
+			height: 220rem;
+			background: steelblue;
+			top: 0;
+			z-index: -10;
+			transform: rotate(241deg);
+		}
+		
+		#profile-details li {  
+		}
+		
+		#profile-img a {
+			color: #333;
+			margin-left: 2.5rem;
+		}
+		
+		#profile-img img:first-child {
+			border-radius: 50%;
+			position: absolute;
+			width: 15rem;
+			z-index: -1;
+		}
+		 
+		#profile-wrapper h2:first-child { 
+			background: #f0f0f0;
+			font-family: verdana;
+			font-size: 1.2rem;
+			padding: .5rem;
+		}
+		
+		#profile-wrapper h2:nth-child(2) {
+			border-radius: 1rem;
+			background: var(--brown);
+			font-family: verdana;
+		}
+		
+		#welcome-text { 
+			letter-spacing: .04rem; 
+			line-height: 1.5rem;
+		}
+		 
+		#welcome-text p:first-child, #connect button {  
+			letter-spacing: .5rem;
+		}
+		 
+		#footer {
+			margin-top: -18rem;
+			position: relative;
+		}
+		
+		#top-nav li:nth-child(2) { 
+			background: var(--background);  
+		}   
+
+		@media (max-width: 1188px) {  
+			#footer {
+				margin-top: -18rem; 
+			} 
+		} 
+		 
+		@media (min-width: 562px) { 
+			#profile-details li {   
+				margin: .5rem .2rem; 
+			}
+			
+			#profile-details ul {  
+				display: flex;
+				flex-wrap: wrap;
+				width: 30rem;
+			}  
+		}
+	</style>
+</head>
+
+<body>
+
+<div id="main">
+
+<?php
+error_reporting(0);
+include "login.php";
+include "config.php";   
+$username = $_SESSION["username"];  
+$sql2 = "SELECT * FROM users WHERE username = '$username';";
+$query = mysqli_query($conn, $sql2);  
+$result = mysqli_fetch_all($query, MYSQLI_ASSOC);
+   
+//print_r($result[0]["first_name"]); 
+ 
+	class Employee {
+		public $username;
+		public $first_name;
+		public $last_name;
+		public $age;
+		public $gender;
+		public $occupation;
+		public $department;
+		public $mobile;
+		public $office_line;
+		public $date_of_birth;
+		public $email;
+		public $interest;
+		public $country;
+		public $date_of_hire;
+		public $status;
+		public $employee_type;
+		public $profile_pic;
+		private $new_password;
+		private $confirm_password;
+	}
+	$user = new Employee();
+	$user->username = $result[0]["username"];  
+	$user->first_name = $result[0]["first_name"];  
+	$user->last_name = $result[0]["last_name"];  
+	$user->email = $result[0]["email"];  
+	$user->age = $result[0]["age"];  
+	$user->gender = $result[0]["gender"]; 
+	$user->occupation = $result[0]["occupation"];  
+	$user->department = $result[0]["department"];  
+	$user->mobile = $result[0]["mobile"];  
+	$user->office_line = $result[0]["office_line"];  
+	$user->date_of_birth = $result[0]["date_of_birth"];  
+	$user->interest = $result[0]["interest"];  
+	$user->country = $result[0]["country"];  
+	$user->date_of_hire = $result[0]["date_of_hire"];  
+	$user->status = $result[0]["employee_status"];  
+	$user->employee_type = $result[0]["employee_type"];   
+	$user->profile_pic = $result[0]["profile_pic"]; 	
+	$date = date('l jS \of F Y');
+
+?>
+
+<?php include "header.html"; ?>
+
+	
+	<div id="welcome-wrapper"> 
+			<img src="images/bg.jpg">
+			<img src="images/bg.jpg">
+			 
+			<div id="welcome-text">
+				<p>Welcome <?= "$user->first_name $user->last_name"; ?></p>
+				<br>
+				
+				<p>Our team is responsible for making sure that operations are running the way they should. We ensure that devices are working properly and every data is secure. We are also responsible for updating and installing new software, hardware and providing technical support.</p>
+				 
+			</div>
+			
+			<div id="connect">
+				<p>If you're having any issues on your DASHBOARD, <a href="contact.php"><em>contact us...</em></a></p> 
+				<button id="connect-btn"><a href="contact.php">Connect</a></button>
+			</div> 
+	</div>
+
+	<div id="profile-wrapper">
+		<h2>Today is <?= $date; ?></h2>
+		<h2><?= $user->email; ?></h2>
+			<div id="profile-content">
+				<div class="dashboard">
+					<ul>
+						<li><a href="profile.php">My Dashboard</a></li>
+						<li><a href="contact.php">Contact</a></li>
+						<li><a href="notification.php">Notification</a></li>
+						<li><a href="change-name.php">Change Name</a></li>
+						<li><a href="change-password.php">Change Password</a></li>
+						<li><a href="change-profile-picture.php">Change Profile Picture</a></li>
+						<li><a href="email-correction.php">Email Correction</a></li>
+						<li><a href="logout.php">Log Out</a></li>
+					</ul>
+				</div>
+				
+				<div id="profile-details"> 
+					<h1>EMPLOYEE DETAILS</h1> 
+					
+					<ul>
+						<li><h2>NAME</h2> <br><br> <span><?= "$user->first_name $user->last_name"; ?></span></li>
+						<li><h2>AGE</h2> <br><br> <span><?= "$user->age"; ?></span></li>
+						<li><h2>GENDER</h2> <br><br> <span><?= "$user->gender"; ?></span></li>
+						<li><h2>OCCUPATION</h2> <br><br> <span><?= "$user->occupation"; ?></span></li>
+						<li><h2>DEPARTMENT</h2> <br><br> <span><?= "$user->department"; ?></span></li>
+						<li><h2>MOBILE</h2> <br><br> <span><?= "$user->mobile"; ?></span></li>
+						<li><h2>OFFICE LINE</h2> <br><br> <span><?= "$user->office_line"; ?></span></li>
+						<li><h2>DATE OF BIRTH</h2> <br><br> <span><?= "$user->date_of_birth"; ?></span></li>
+						<li><h2>EMAIL</h2> <br><br> <span><?= "$user->email"; ?></span></li>
+						<li><h2>INTEREST</h2> <br><br> <span><?= "$user->interest"; ?></span></li>
+						<li><h2>COUNTRY</h2> <br><br> <span><?= "$user->country"; ?></span></li>
+						<li><h2>DATE OF HIRE</h2> <br><br> <span><?= "$user->date_of_hire"; ?></span></li>
+						<li><h2>STATUS</h2> <br><br> <span><?= "$user->status"; ?></span></li>
+						<li><h2>EMPLOYEE TYPE</h2> <br><br> <span></span></li>
+					</ul>  
+				</div>  
+		 
+
+				<div id="profile-img">	
+					<img src="images/default-profile-pic.jpg">
+					<img src="<?= $user->profile_pic ?>">
+					<p><?= "$user->first_name $user->last_name"; ?></p>
+					<span><a href="change-profile-picture.php">Change Profile Picture</a></span>
+				</div> 
+			</div> 
+			<div class="profile-bg"></div>
+	</div>	
+
+<?php print_r($result[0]["id"]); ?>	
+	 
+</div>
+<?php include "footer.html"; ?>
+</body>
+
+</html>
