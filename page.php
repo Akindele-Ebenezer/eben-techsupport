@@ -25,12 +25,18 @@
 				margin-top: 3rem;	 		
 			} 
 		}
+         
+		@media (max-width: 362px) { 
+            #welcome-text {
+                transform: translateY(-1rem);
+            }
+		}  	 
 	</style>
 </head>
 
 <body>
 
-<?php include "header.html"; ?>
+<?php include "header.php"; ?>
  
 	
 	<div id="welcome-wrapper">
@@ -39,7 +45,7 @@
 		
 		<div id="welcome-text"> 
 			<h1><?= $title; ?></h1>
-			<p>We are also available to help you build and implement pleasant/responsive websites. <br> <strong><a href="http://akindele-ebenezer.herokuapp.com" target="_blank">Click Here</a></strong> to know more about the owner of the company.</p>			
+			<p>We are also available to help you build and implement pleasant/responsive websites. <br> <strong><a href="http://akindele-ebenezer.herokuapp.com" target="_blank">Click Here</a></strong> to know more about the company.</p>			
 		</div> 
 	</div>
 
