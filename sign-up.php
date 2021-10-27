@@ -16,7 +16,7 @@
 <body>
 
 <main id="main">
-<?php include "header.html" ?>
+<?php include "header.php" ?>
 	<form id="sign-up-form" action="registration-successful.php" method="post" enctype="multipart/form-data">
 		<div id="sign-up-wrapper">
 			<div id="sign-up-content">
