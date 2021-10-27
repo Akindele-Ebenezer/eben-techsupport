@@ -4,7 +4,7 @@
 error_reporting(0);
 	include "config.php";
 	include "login.php";
-	$title = "Change DP";
+	$title = "Change Profile Pic";
 	include "page.php"; 
 	include "change-profile-pic.php"; 
 	$id = $_POST["id"];
