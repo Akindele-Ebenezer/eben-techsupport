@@ -34,7 +34,7 @@
 		#contact-wrapper h1 {
 			text-align: center;
 		}
-		
+
 		textarea {
 			border: 3px solid #ddd;
 			border-radius: 1rem;
@@ -45,11 +45,21 @@
 			max-height: 12rem; 
 			padding: .5rem;
 		}
+			
+		textarea:focus {
+			border: none; 
+		}
 		
 		#top-nav li:nth-child(5) {
 				background: var(--background);
 		}
 		
+        @media (min-width: 813px) {
+            input {
+                margin-inline: .8rem;
+            }
+        }
+
 		@media (max-width: 820px) {
 			#contact-wrapper {
 				margin-top: 5rem;
@@ -62,7 +72,10 @@
 		}
 	</style>
 </head>
-	<?php include "header.html"; ?>
+
+<body>
+<main id="main">
+	<?php include "header.php"; ?>
 <form id="contact-form" action="mail-message.php" method="post">
 	<div id="contact-wrapper">
 		<div id="contact-content">
@@ -80,3 +93,5 @@
 </form>
 
 <?php include "footer.html"; ?>
+</main>
+</body>
