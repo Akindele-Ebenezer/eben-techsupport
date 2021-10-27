@@ -8,7 +8,7 @@
 	<main>
  <?php 
 	include "login.php";
-	$title = "Notification";
+	$title = "View Notifications";
 	include "page.php"; 	
  ?> 
  <div class="content-wrapper">
