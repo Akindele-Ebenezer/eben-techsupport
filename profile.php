@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>ETS - My Dashboard</title>
-	<link rel="stylesheet" href="styles.css">
 	<style> 
 		 #connect a { 
 			color: #fff;
@@ -15,7 +14,11 @@
 		.dashboard li {
 			background-color: #fff; 
 		}
-		  
+		 
+		#email-span {  
+            text-transform: lowercase;
+		}
+		 
 		.profile-bg {
 			position: absolute;
 			width: 100vw;
@@ -24,9 +27,6 @@
 			top: 0;
 			z-index: -10;
 			transform: rotate(241deg);
-		}
-		
-		#profile-details li {  
 		}
 		
 		#profile-img a {
@@ -49,8 +49,7 @@
 		}
 		
 		#profile-wrapper h2:nth-child(2) {
-			border-radius: 1rem;
-			background: var(--brown);
+			border-radius: 1rem; 
 			font-family: verdana;
 		}
 		
@@ -88,8 +87,15 @@
 				flex-wrap: wrap;
 				width: 30rem;
 			}  
-		}
+		} 
+
+        @media (max-width: 643px) {
+            #welcome-text {
+                transform: translateY(2rem);
+            }
+        }
 	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -150,7 +156,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 ?>
 
-<?php include "header.html"; ?>
+<?php include "header.php"; ?>
 
 	
 	<div id="welcome-wrapper"> 
@@ -158,7 +164,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 			<img src="images/bg.jpg">
 			 
 			<div id="welcome-text">
-				<p>Welcome <?= "$user->first_name $user->last_name"; ?></p>
+				<p><strong>Welcome <?= "$user->first_name $user->last_name"; ?></strong></p>
 				<br>
 				
 				<p>Our team is responsible for making sure that operations are running the way they should. We ensure that devices are working properly and every data is secure. We are also responsible for updating and installing new software, hardware and providing technical support.</p>
@@ -200,7 +206,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 						<li><h2>MOBILE</h2> <br><br> <span><?= "$user->mobile"; ?></span></li>
 						<li><h2>OFFICE LINE</h2> <br><br> <span><?= "$user->office_line"; ?></span></li>
 						<li><h2>DATE OF BIRTH</h2> <br><br> <span><?= "$user->date_of_birth"; ?></span></li>
-						<li><h2>EMAIL</h2> <br><br> <span><?= "$user->email"; ?></span></li>
+						<li><h2>EMAIL</h2> <br><br> <span id="email-span"><?= "$user->email"; ?></span></li>
 						<li><h2>INTEREST</h2> <br><br> <span><?= "$user->interest"; ?></span></li>
 						<li><h2>COUNTRY</h2> <br><br> <span><?= "$user->country"; ?></span></li>
 						<li><h2>DATE OF HIRE</h2> <br><br> <span><?= "$user->date_of_hire"; ?></span></li>
