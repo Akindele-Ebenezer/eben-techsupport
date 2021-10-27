@@ -22,7 +22,7 @@
 </style>
 
 <?php include "page-loader.php"; ?>
-<?php include "header.html"; ?>
+<?php include "header.php"; ?>
 <main id="main">
 <?php
 $name = stripslashes(trim($_POST["name"])); 
@@ -46,12 +46,12 @@ try {
 //Create an instance; passing `true` enables exceptions
 	$mail = new PHPMailer(true);
     //Server settings
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'tobi.akindele@gmail.com';                     //SMTP username
-    $mail->Password   = 'ebenkeyz1*';                               //SMTP password
+    $mail->Password   = 'ebenkeyz';                               //SMTP password
     $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
