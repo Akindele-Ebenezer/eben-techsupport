@@ -1,6 +1,5 @@
 <?php 
-error_reporting(0);
-// Include config file
+error_reporting(0); 
 require_once "config.php";    
 	 $username =  stripslashes(trim($_POST["username"]));
 	 $password =  stripslashes(trim($_POST["password"]));
@@ -35,8 +34,7 @@ require_once "config.php";
 <head>
 	<meta charset="UTF-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>ETS - Log In</title>
-	<link rel="stylesheet" href="styles.css">  
+	<title>ETS - Log In</title> 
 	<style>
 		#main {
 			display: none;
@@ -45,6 +43,7 @@ require_once "config.php";
 		#top-nav li:first-child {
 			background: var(--background);
 		}
+        <link rel="stylesheet" href="styles.css">
 	</style>
 </head>
 
@@ -54,7 +53,7 @@ require_once "config.php";
 ?>
 <main id="main">
 
-<?php include "header.html"; 
+<?php include "header.php"; 
 ?>
 
 	<div id="login-wrapper">
