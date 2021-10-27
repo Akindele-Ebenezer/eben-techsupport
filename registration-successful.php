@@ -6,15 +6,12 @@
 	<style>
 		#main {
 			display: none;
-		}
+		} 
 	</style>
 </head>
-<?php include "page-loader.php"; ?>
 
-<body>
-<main id="main">
 <?php
-require "config.php";
+include "config.php";
 include "profile-pic.php"; 
 
 error_reporting(0);
@@ -39,13 +36,17 @@ $employee_type = $_POST["employee_type"];
 
 $query = "INSERT INTO users (username, first_name, last_name, age, gender, occupation, department, mobile, office_line, interest, country, date_of_hire, employee_type, profile_pic, password, email) 
 							VALUES
-							('$username', '$first_name', '$last_name', '$age', '$gender', '$occupation', '$department', '$mobile', '$office_line', '$interest', '$country', '$date_of_hire', '$employee_type', '$profile_pic', '$password', '$email')";
+							('$username', '$first_name', '$last_name', '$age', '$gender', '$occupation', '$department', '$mobile', '$office_line', '$interest', '$country', '$date_of_hire', '$employee_type', '$profile_pic', '$password', '$email');";
 		
 $result = mysqli_query($conn, $query);
 //echo $office_line;
 	
 ?>
-<?php include "header.html"; ?>
+<body> 
+<?php include "page-loader.php"; ?>
+<main id="main">
+<?php include "header.php";
+ ?>
 	<div id="reg-success-wrapper">
 		<div id="reg-success-content">
 			<h1>Registration Successful..</h2>
