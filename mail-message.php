@@ -1,29 +1,36 @@
-<title>Message</title>
-<style>
-		
-		#mail-message-wrapper {
-			display: flex;
-			justify-content: center;
-			margin-block: 12rem;
-			padding: 1rem;
-		}	
-		
-		#mail-message-wrapper h1 {
-			color: steelblue;	 
-		}	
-		
-		#mail-message-wrapper p {
-			line-height: 2rem;
-		}	
-		
-		#main {
-			display: none;	
-		}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Message</title>
+	<style>
+			
+			#mail-message-wrapper {
+				display: flex;
+				justify-content: center;
+				margin-block: 12rem;
+				padding: 1rem;
+			}	
+			
+			#mail-message-wrapper h1 {
+				color: steelblue;	 
+			}	
+			
+			#mail-message-wrapper p {
+				line-height: 2rem;
+			}	
+			
+			#main {
+				display: none;	
+			}
+	</style>
+</head>
 
+<body>
 <?php include "page-loader.php"; ?>
-<?php include "header.php"; ?>
 <main id="main">
+<?php include "header.php"; ?>
 <?php
 $name = stripslashes(trim($_POST["name"])); 
 $email = stripslashes(trim($_POST["email"])); 
@@ -56,7 +63,7 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('tobi.akindele@gmail.com', 'Ebenezer');
+    $mail->setFrom("$email", "$name");
     $mail->addAddress('tobi.akindele@gmail.com', 'Ebenezer');  
 
     //Content
@@ -90,3 +97,5 @@ try {
 <?php include "footer.html"; ?>
 </main>
 <?php include "page-loader-script.php"; ?>
+</body>
+</html>
