@@ -14,8 +14,13 @@
 		#welcome-text h1 {   
 			color: #eee;
 			font-size: 3.5rem; 
+			transform: translateY(-1.5rem);
 		}
-		 
+		
+		#welcome-text p {
+		        transform: translateY(-1.5rem);	
+		}
+		
 		#welcome-wrapper {     
 			margin-top: 7rem;	 		
 		} 
