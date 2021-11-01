@@ -26,15 +26,16 @@
 			} 
 		}
         	 
+		@media (max-width: 646px) {
+			#welcome-text h1, p {
+				transform: translateY(-1.5rem);	
+			}	
+		}
+		
 		@media (max-width: 362px) { 
             		#welcome-text {
 			    transform: translateY(-1rem);
-			}
-			
-			#welcome-text h1, p {
-				transform: translateY(-1.5rem);	
-			}
-		
+			} 
 		}  	 
 	</style>
 </head>
