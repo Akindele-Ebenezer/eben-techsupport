@@ -50,11 +50,11 @@
 					</div>
 				</a>
 					<div id="address">
-						<img src="images/address.png">
+						<img src="images/address.PNG">
 						<p><strong>ADDRESS</strong> <br> LAGOS, NIGERIA</p>
 					</div>
 					<div id="call-us">
-						<a href="tel:09052757805"><img id="call" src="images/call.png"></a>
+						<a href="tel:09052757805"><img id="call" src="images/call.PNG"></a>
 						<p><a href="tel:09052757805"><strong>CALL US</strong></a> <br> 09052757809</p> 
 					</div>
 					<div id="social-links">
