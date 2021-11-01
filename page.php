@@ -13,12 +13,7 @@
 		
 		#welcome-text h1 {   
 			color: #eee;
-			font-size: 3.5rem; 
-			transform: translateY(-1.5rem);
-		}
-		
-		#welcome-text p {
-		        transform: translateY(-1.5rem);	
+			font-size: 3.5rem;  
 		}
 		
 		#welcome-wrapper {     
@@ -35,6 +30,11 @@
             		#welcome-text {
 			    transform: translateY(-1rem);
 			}
+			
+			#welcome-text h1, p {
+				transform: translateY(-1.5rem);	
+			}
+		
 		}  	 
 	</style>
 </head>
