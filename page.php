@@ -25,12 +25,7 @@
 				margin-top: 3rem;	 		
 			} 
 		}
-        	 @media (max-width: 365px) {
-			#welcome-text {
-			    padding-bottom: .5rem;
-			}
-		}
-		
+        	 
 		@media (max-width: 362px) { 
             		#welcome-text {
 			    transform: translateY(-1rem);
