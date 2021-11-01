@@ -33,7 +33,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">  
- 	<link rel="icon" href="images/company-logo.PNG">
+ 	<link rel="icon" href="images/company-logo.png">
      <style>	
         .dashboard li { 
             border-left: 3px solid cadetblue; 
@@ -50,11 +50,11 @@
 					</div>
 				</a>
 					<div id="address">
-						<img src="images/address.PNG">
+						<img src="images/address.png">
 						<p><strong>ADDRESS</strong> <br> LAGOS, NIGERIA</p>
 					</div>
 					<div id="call-us">
-						<a href="tel:09052757805"><img id="call" src="images/call.PNG"></a>
+						<a href="tel:09052757805"><img id="call" src="images/call.png"></a>
 						<p><a href="tel:09052757805"><strong>CALL US</strong></a> <br> 09052757809</p> 
 					</div>
 					<div id="social-links">

@@ -6,7 +6,7 @@ require_once "config.php";
 	 
 	 $mysql = "SELECT * FROM users WHERE username = '$username' AND password = '$password';";
 	 $query = mysqli_query($conn, $mysql); 
-	 
+	  
 	 if (isset($_POST["submit"])) { 
 		 if (empty($username)) {
 			$username_error_message = "Enter username..";

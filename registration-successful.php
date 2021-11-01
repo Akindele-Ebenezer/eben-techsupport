@@ -25,19 +25,18 @@ $gender = $_POST["gender"];
 $occupation = $_POST["occupation"];
 $department = $_POST["department"];
 $mobile = $_POST["mobile"];
-$office_line = $_POST["office_line"];
+$school = $_POST["school"];
 $date_of_birth = $_POST["date_of_birth"];
 $email = $_POST["email"];
 $interest = $_POST["interest"];
 $country = $_POST["country"];
-$date_of_hire = $_POST["date_of_hire"];
+$class = $_POST["class"];
 $status = $_POST["status"]; 
-$profile_pic = $target_file;
-$employee_type = $_POST["employee_type"];
+$profile_pic = $target_file; 
 
-$query = "INSERT INTO users (username, first_name, last_name, age, gender, occupation, department, mobile, office_line, interest, country, date_of_hire, employee_type, profile_pic, password, email) 
+$query = "INSERT INTO users (username, first_name, last_name, age, gender, occupation, department, mobile, interest, country, profile_pic, password, email, school, class) 
 							VALUES
-							('$username', '$first_name', '$last_name', '$age', '$gender', '$occupation', '$department', '$mobile', '$office_line', '$interest', '$country', '$date_of_hire', '$employee_type', '$profile_pic', '$password', '$email');";
+							('$username', '$first_name', '$last_name', '$age', '$gender', '$occupation', '$department', '$mobile', '$interest', '$country', '$profile_pic', '$password', '$email', '$school', '$class');";
 		
 $result = mysqli_query($conn, $query);
 //echo $office_line;

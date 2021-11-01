@@ -69,7 +69,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    = $message;
+    $mail->Body    = "FROM : <strong>$name</strong> <br> <br> PHONE NO : <strong>$phone_no</strong> <br> <br>" . $message;
     $mail->AltBody = 'Stay Bleesed!';
 
     $mail->send();

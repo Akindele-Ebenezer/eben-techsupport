@@ -591,8 +591,12 @@
 			}
 		} 
 		
-		@media (max-width: 361px) {
+		@media (max-width: 365px) {
 			* {
 				font-size: small;
 			}  
+			
+			#welcome-text { 
+				padding-bottom: 0;
+			} 
 		}

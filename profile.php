@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>ETS - My Dashboard</title>
 	<style> 
+	 
+		#connect-btn {  
+			letter-spacing: .5rem; 
+		}
+		  
 		 #connect a { 
 			color: #fff;
 			text-decoration: none;
@@ -58,8 +63,14 @@
 			line-height: 1.5rem;
 		}
 		 
-		#welcome-text p:first-child, #connect button {  
-			letter-spacing: .5rem;
+		#welcome-text p:first-child {
+			letter-spacing: .2rem;	
+			transform: translateY(-1.5rem);	
+			text-align: center; 		
+		}
+		  
+		#welcome-text p:last-child {   
+			transform: translateY(-1.5rem);		
 		}
 		 
 		#footer {
@@ -94,8 +105,9 @@
                 transform: translateY(2rem);
             }
         }
+		
 	</style>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css"> 
 </head>
 
 <body>
@@ -122,14 +134,13 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 		public $occupation;
 		public $department;
 		public $mobile;
-		public $office_line;
+		public $school;
 		public $date_of_birth;
 		public $email;
 		public $interest;
 		public $country;
-		public $date_of_hire;
-		public $status;
-		public $employee_type;
+		public $class;
+		public $status; 
 		public $profile_pic;
 		private $new_password;
 		private $confirm_password;
@@ -144,13 +155,12 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	$user->occupation = $result[0]["occupation"];  
 	$user->department = $result[0]["department"];  
 	$user->mobile = $result[0]["mobile"];  
-	$user->office_line = $result[0]["office_line"];  
+	$user->school = $result[0]["school"];  
 	$user->date_of_birth = $result[0]["date_of_birth"];  
 	$user->interest = $result[0]["interest"];  
 	$user->country = $result[0]["country"];  
-	$user->date_of_hire = $result[0]["date_of_hire"];  
-	$user->status = $result[0]["employee_status"];  
-	$user->employee_type = $result[0]["employee_type"];   
+	$user->class = $result[0]["class"];  
+	$user->status = $result[0]["employee_status"];    
 	$user->profile_pic = $result[0]["profile_pic"]; 	
 	$date = date('l jS \of F Y');
 
@@ -195,23 +205,21 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 				</div>
 				
 				<div id="profile-details"> 
-					<h1>EMPLOYEE DETAILS</h1> 
+					<h1>STUDENT PROFILE</h1> 
 					
 					<ul>
 						<li><h2>NAME</h2> <br><br> <span><?= "$user->first_name $user->last_name"; ?></span></li>
+						<li><h2>SCHOOL</h2> <br><br> <span><?= "$user->school"; ?></span></li>
+						<li><h2>CLASS</h2> <br><br> <span><?= "$user->class"; ?></span></li>
 						<li><h2>AGE</h2> <br><br> <span><?= "$user->age"; ?></span></li>
 						<li><h2>GENDER</h2> <br><br> <span><?= "$user->gender"; ?></span></li>
 						<li><h2>OCCUPATION</h2> <br><br> <span><?= "$user->occupation"; ?></span></li>
 						<li><h2>DEPARTMENT</h2> <br><br> <span><?= "$user->department"; ?></span></li>
-						<li><h2>MOBILE</h2> <br><br> <span><?= "$user->mobile"; ?></span></li>
-						<li><h2>OFFICE LINE</h2> <br><br> <span><?= "$user->office_line"; ?></span></li>
-						<li><h2>DATE OF BIRTH</h2> <br><br> <span><?= "$user->date_of_birth"; ?></span></li>
+						<li><h2>MOBILE</h2> <br><br> <span><?= "$user->mobile"; ?></span></li> 
 						<li><h2>EMAIL</h2> <br><br> <span id="email-span"><?= "$user->email"; ?></span></li>
 						<li><h2>INTEREST</h2> <br><br> <span><?= "$user->interest"; ?></span></li>
-						<li><h2>COUNTRY</h2> <br><br> <span><?= "$user->country"; ?></span></li>
-						<li><h2>DATE OF HIRE</h2> <br><br> <span><?= "$user->date_of_hire"; ?></span></li>
-						<li><h2>STATUS</h2> <br><br> <span><?= "$user->status"; ?></span></li>
-						<li><h2>EMPLOYEE TYPE</h2> <br><br> <span></span></li>
+						<li><h2>COUNTRY</h2> <br><br> <span><?= "$user->country"; ?></span></li> 
+						<li><h2>USER ID</h2><br><br> <span><?php print_r($result[0]["id"]); ?> </span></li>
 					</ul>  
 				</div>  
 		 
@@ -225,8 +233,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 			</div> 
 			<div class="profile-bg"></div>
 	</div>	
-
-<?php print_r($result[0]["id"]); ?>	
+	
 	 
 </div>
 <?php include "footer.html"; ?>

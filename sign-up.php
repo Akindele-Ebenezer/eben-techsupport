@@ -10,6 +10,10 @@
 		body {
 			background-image: linear-gradient(to right, #fff, #333);
 		}
+		
+		input {
+			margin-inline: .5rem;
+		}
 	</style>
 </head>
 
@@ -35,6 +39,10 @@
 					  
 					<input type="text" name="age" placeholder="Age / Optional"> 
 					 
+					<input type="text" name="school" placeholder="School" required> <br> 
+					 
+					<input type="text" name="class" placeholder="Class" required> 
+					 
 					<input type="text" name="gender"  placeholder="Gender" required> <br>
 					
 					 
@@ -43,36 +51,21 @@
 					<input type="text" name="department"  placeholder="Department" required> <br>
 					 
 					 
-					<input type="number" name="mobile"  placeholder="Mobile" required>
-					
-					<input type="number" name="office_line"  placeholder="Office Line" required> <br>
-					
+					<input type="number" name="mobile"  placeholder="Mobile" required>  <br>
+					<! --
 					<center>
 					<label for="date_of_birth">Date of Birth / Optional:</label>
 					<input type="date" name="date_of_birth" > <br> 
 					</center>
-					 
+					 -->
 					<input type="email" name="email"  placeholder="Email" required> <br>
 					 
 					<input type="text" name="interest"  placeholder="Interest / Optional"> 
 					 
 					<input type="text" name="country"  placeholder="Country" required> <br>
-					 
-					<center>
-					<label for="date_of_hire">Date of Hire / Optional:</label>
-					<input type="date" name="date_of_hire" > <br>
-					</center> 
+					  
 					
-					Profile Picture: <input type="file" name="profile_pic" required>
-					
-					<center>
-					<label for="employee_type">Employee Type / Optional:</label> 
-						<select name="employee_type">
-							<option value="active">Active</option>
-							<option value="overtime">Overtime</option>
-							<option value="regular">Regular</option>
-						</select>
-					</center>
+					Profile Picture: <input type="file" name="profile_pic"> 
 					<br>
 				<button type="submit">Create Account</button>
 			</div>
