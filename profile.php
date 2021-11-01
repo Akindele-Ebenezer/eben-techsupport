@@ -177,7 +177,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 				<p><strong>Welcome <?= "$user->first_name $user->last_name"; ?></strong></p>
 				<br>
 				
-				<p>Our team is responsible for making sure that operations are running the way they should. We ensure that devices are working properly and every data is secure. We are also responsible for updating and installing new software, hardware and providing technical support.</p>
+				<p> Our team is responsible for keeping students productive, helping them via telephone or verbally. We ensure that their devices are working properly and every data is secure. We are also responsible for updating and installing new software, typing/printing soft copy assignments and providing technical support.</p>
 				 
 			</div>
 			
