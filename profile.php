@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>ETS - My Dashboard</title>
 	<style> 
+		#about {
+			font-size: .98rem;	
+		}
+	 
 		#connect-btn {  
 			letter-spacing: .5rem; 
 		}
