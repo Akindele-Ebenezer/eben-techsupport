@@ -70,6 +70,7 @@
 		}
 		  
 		#welcome-text p:last-child {   
+			font-size: .98rem;
 			transform: translateY(-1.5rem);		
 		}
 		 
