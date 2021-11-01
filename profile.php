@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>ETS - My Dashboard</title>
 	<style> 
+		#about {
+			font-size: .98rem;	
+		}
 	 
 		#connect-btn {  
 			letter-spacing: .5rem; 
@@ -69,8 +72,7 @@
 			text-align: center; 		
 		}
 		  
-		#welcome-text p:last-child {   
-			font-size: .98rem;
+		#welcome-text p:last-child {    
 			transform: translateY(-1.5rem);		
 		}
 		 
@@ -178,7 +180,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 				<p><strong>Welcome <?= "$user->first_name $user->last_name"; ?></strong></p>
 				<br>
 				
-				<p> Our team is responsible for keeping students productive, helping them via telephone or verbally. We ensure that their devices are working properly and every data is secure. We are also responsible for updating and installing new software, typing/printing soft copy assignments and providing technical support.</p>
+				<p id="about"> Our team is responsible for keeping students productive, helping them via telephone or verbally. We ensure that their devices are working properly and every data is secure. We are also responsible for updating and installing new software, typing/printing soft copy assignments and providing technical support.</p>
 				 
 			</div>
 			
