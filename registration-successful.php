@@ -16,7 +16,7 @@ include "config.php";
 include "profile-pic.php"; 
 
 error_reporting(0);
-$username = $_POST["first_name"];
+$username = $_POST["email"];
 $password = $_POST["confirm_password"];
 $first_name = $_POST["first_name"];
 $last_name = $_POST["last_name"];
