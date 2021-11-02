@@ -56,6 +56,10 @@
 		    padding: 1rem;
 		}
 		
+		#profile-picture-note a {
+			color: #000;
+		}
+		
 		#profile-wrapper h2:first-child { 
 			background: #f0f0f0;
 			font-family: verdana;
