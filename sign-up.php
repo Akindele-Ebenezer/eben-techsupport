@@ -28,7 +28,7 @@
 				<p>It's quick and easy</p> 
 				<hr>
 				
-				<input type="text" name="first_name" placeholder="First name (Username)" required>
+				<input type="text" name="first_name" placeholder="First name" required>
 				<input type="text" name="last_name" placeholder="Last name" required> <br>
 				<input type="email" name="email" placeholder="Email" required> <br>
 				<input type="password" name="new_password" placeholder="New Password" required>
@@ -58,7 +58,7 @@
 					<input type="date" name="date_of_birth" > <br> 
 					</center>
 					 -->
-					<input type="email" name="email"  placeholder="Email" required> <br>
+					<!-- <input type="email" name="email"  placeholder="Email" required> --> <br>
 					 
 					<input type="text" name="interest"  placeholder="Interest / Optional"> 
 					 
