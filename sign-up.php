@@ -14,6 +14,10 @@
 		input {
 			margin-inline: .5rem;
 		}
+		
+		#sign-up-content {
+			transform: translateY(7rem);	
+		}
 	</style>
 </head>
 
