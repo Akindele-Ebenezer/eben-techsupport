@@ -52,7 +52,7 @@
 		#profile-picture-note {
 		    background: #fff;
 		    border-radius: 1rem;
-		    margin-block: 14.5rem;
+		    margin-top: 7.5rem;
 		    padding: 1rem;
 		}
 		
