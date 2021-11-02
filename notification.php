@@ -84,7 +84,7 @@
 		<tr>
 			<td>11</td> 
 			<td>NOVEMBER</td> 
-			<td>-</td> 
+			<td>Soft copy assignments, Typing & Printing | <strong>AVAILABLE</strong> </td> 
 		</tr>
 		<tr>
 			<td>12</td> 
