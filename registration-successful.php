@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $query);
 	<div id="reg-success-wrapper">
 		<div id="reg-success-content">
 			<h1>Registration Successful..</h2>
-			<p>Hello <?=  ucwords($first_name) . " " . ucwords($last_name); ?>, you're registered. Your username is <?php $username; ?>.</p>
+			<p>Hello <?=  ucwords($first_name) . " " . ucwords($last_name); ?>, you're registered. Your username is <?= $username; ?>.</p>
 			<p>Go to <a href="index.php">Home Page</a> to Login</p>
 		</div>
 	</div>
