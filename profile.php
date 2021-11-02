@@ -241,8 +241,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 				<div id="profile-img">	
 					<img src="images/default-profile-pic.jpg">
 					<img src="<?= $user->profile_pic ?>">
-					<p><?= "$user->first_name $user->last_name"; ?></p>
-					<span><a href="change-profile-picture.php">Change Profile Picture</a></span>
+					<p><?= "$user->first_name $user->last_name"; ?></p> 
 				</div> 
 				<div id="profile-picture-note">
 						<p><strong>NOTE:</strong> You can upload your Profile Picture by clicking <a href="change-profile-picture.php">Change Profile Picture</a>. Your <strong>User Id</strong> is on your dashboard. Click on choose file, then choose the picture you want then upload the picture. Though, this is temporary and will be removed in an hour.
