@@ -34,7 +34,7 @@
 		<tr>
 			<td>1</td> 
 			<td>JANUARY</td> 
-			<td>Present</td> 
+			<td>Absent</td> 
 		</tr>
 		<tr>
 			<td>2</td> 
