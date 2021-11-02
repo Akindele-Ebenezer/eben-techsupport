@@ -51,7 +51,7 @@
 		
 		<div id="welcome-text"> 
 			<h1><?= $title; ?></h1>
-			<p>We are also available to help you build and implement pleasant/responsive websites. <br> <strong><a href="http://akindele-ebenezer.herokuapp.com" target="_blank">Click Here</a></strong> to know more about the company.</p>			
+			<p>We are also available to help you build and implement pleasant/responsive websites. <br> <strong><a href="https://akindele-ebenezer.herokuapp.com" target="_blank">Click Here</a></strong> to know more..</p>			
 		</div> 
 	</div>
 
