@@ -52,12 +52,7 @@
 					 
 					 
 					<input type="number" name="mobile"  placeholder="Mobile" required>  <br>
-					<! --
-					<center>
-					<label for="date_of_birth">Date of Birth / Optional:</label>
-					<input type="date" name="date_of_birth" > <br> 
-					</center>
-					 -->
+					 
 					<!-- <input type="email" name="email"  placeholder="Email" required> --> <br>
 					 
 					<input type="text" name="interest"  placeholder="Interest / Optional"> 
