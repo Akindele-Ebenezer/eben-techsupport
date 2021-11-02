@@ -49,6 +49,13 @@
 			z-index: -1;
 		}
 		 
+		#profile-picture-note {
+		    background: #fff;
+		    border-radius: 1rem;
+		    margin-block: 14.5rem;
+		    padding: 1rem;
+		}
+		
 		#profile-wrapper h2:first-child { 
 			background: #f0f0f0;
 			font-family: verdana;
@@ -233,6 +240,11 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 					<p><?= "$user->first_name $user->last_name"; ?></p>
 					<span><a href="change-profile-picture.php">Change Profile Picture</a></span>
 				</div> 
+				<div id="profile-picture-note">
+						<p><strong>NOTE:</strong> You can upload your Profile Picture by clicking <a href="change-profile-picture.php">Change Profile Picture</a>. Your <strong>User Id</strong> is on your dashboard. Click on choose file, then choose the picture you want then upload the picture. Though, this is temporary and will be removed in an hour.
+						<br> <br>
+						But if you want your Picture to always show in your profile, send your picture to this whatsapp no: <ins><strong>09052757805</strong></ins>. You will pay small cash for that, and changes will be made instantly.</p>
+				</div>
 			</div> 
 			<div class="profile-bg"></div>
 	</div>	
