@@ -65,7 +65,7 @@ require_once "config.php";
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
 				<div id="form-wrapper"> 
 					<span><?= $wrong_password_error; ?></span> <br> <br>
-					<label>Name</label>  <br>
+					<label>Email</label>  <br>
 					<input type="text" name="username" value="<?php echo $username; ?>"> <br>
 					<span><?= $username_error_message; ?></span>  <br><br>
 					
