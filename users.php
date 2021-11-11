@@ -52,6 +52,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 		.users li {
 			border: 1px solid #ddd;
 			border-radius: 0 0 1rem 1rem;
+			justify-content: center;
 			margin: .3rem;
 			padding-bottom: 1rem; 		
 		} 
