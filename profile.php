@@ -37,6 +37,10 @@
 			transform: rotate(241deg);
 		}
 		
+		#profile-details span {
+			word-wrap: break-all;	
+		}
+		
 		#profile-img a {
 			color: #333;
 			margin-left: 2.5rem;
