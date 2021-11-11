@@ -38,7 +38,7 @@
 		}
 		
 		#profile-details span {
-			word-wrap: break-all;	
+			word-wrap: break-word;	
 		}
 		
 		#profile-img a {
