@@ -14,6 +14,76 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ETS | Users</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		
+		.users {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center; 
+			padding: .2rem;
+		} 
+		 
+		.users div {
+			border: 1px solid #ddd;
+			border-radius: 1rem;
+			margin: .2rem;
+			padding: 1rem;
+			width: 30rem;
+		} 
+		   
+		.users div ul li h3 {
+			background: #f0f0f0;
+			padding-inline: .3rem;
+			text-indent: .2rem;
+		} 
+		 
+		.ets-users {
+			border-bottom: 1px solid #ccc;
+			margin-top: 9rem;
+			letter-spacing: .2rem;
+			text-align: center; 
+		} 
+		 
+		.users img {
+			border-radius: 3rem;
+			width: 4rem;
+		} 
+		 
+		.users li {
+			border: 1px solid #ddd;
+			border-radius: 0 0 1rem 1rem;
+			margin: .3rem;
+			padding-bottom: 1rem; 		
+		} 
+		 
+		.users span {
+			padding-inline: .5rem;
+			word-wrap: break-word;
+		} 
+		  
+		.users span#email {
+			text-transform: lowercase;
+		} 
+		 
+		.users ul {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+		}  
+		 
+		@media (max-width: 818px) {
+			.ets-users {
+				margin-top: 5rem;
+			}
+		}
+		
+		@media (max-width: 500px) {
+			.users li {
+				width: 80vw;
+			}
+		}
+		
+	</style>
 </head>
 
 <body>
