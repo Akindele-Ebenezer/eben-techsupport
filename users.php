@@ -13,7 +13,6 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ETS | Users</title>
-	<link rel="stylesheet" href="styles.css">
 	<style>
 		
 		.users {
@@ -89,6 +88,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 		}
 		
 	</style>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
