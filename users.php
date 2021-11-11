@@ -1,6 +1,6 @@
 <?php
-session_start();
 include "config.php";
+session_start();
 $sql = "SELECT * FROM users";
 $query = mysqli_query($conn, $sql);
 $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
