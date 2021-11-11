@@ -44,6 +44,10 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 			text-align: center; 
 		} 
 		 
+		.users h1 {
+			text-transform: capitalize;	
+		}
+		
 		.users img {
 			border-radius: 3rem;
 			width: 4rem;
