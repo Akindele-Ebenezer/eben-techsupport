@@ -18,7 +18,8 @@ error_reporting(0);
 	<div class="dashboard">
 		<ul>
 			<li><a href="profile.php">My Dashboard</a></li>
-			<li><a href="contact.php">Contact</a></li>
+			<li><a href="contact.php">Contact</a></li>					
+			<li><a href="users.php">Students</a></li>
 			<li><a href="notification.php">Notification</a></li>
 			<li><a href="change-name.php">Change Name</a></li>
 						<li><a href="change-profile-picture.php">Change Profile Picture</a></li>
