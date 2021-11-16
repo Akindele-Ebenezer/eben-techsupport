@@ -26,7 +26,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 			border: 1px solid #ddd;
 			border-radius: 1rem;
 			margin: .2rem;
-			padding: 1rem;
+			padding: 1rem 0 1rem 1rem;
 			width: 30rem;
 		} 
 		   
