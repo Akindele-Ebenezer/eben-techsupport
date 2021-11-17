@@ -435,6 +435,7 @@
 			background: #fff;
 			display: flex; 
 			font-size: small;
+			justify-content: center;
 			letter-spacing: .2rem;
 			list-style: none;
 		} 
