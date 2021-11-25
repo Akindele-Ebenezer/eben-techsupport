@@ -1,8 +1,8 @@
 <?php 
 error_reporting(0); 
 require_once "config.php";    
-	 $username =  stripslashes(trim($_POST["username"]));
-	 $password =  stripslashes(trim($_POST["password"]));
+	 $username =  stripslashes(trim(mysqli_real_escape_string($conn, $_POST["username"])));
+	 $password =  stripslashes(trim(mysqli_real_escape_string($conn, $_POST["password"])));
 	 
 	 $mysql = "SELECT * FROM users WHERE username = '$username' AND password = '$password';";
 	 $query = mysqli_query($conn, $mysql); 
