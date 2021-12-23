@@ -1,6 +1,6 @@
 
 	<style> 
-		a:not(#sm-call-us p a) {
+		a:not(#sm-call-us p a, #connect p a, #connect-btn a) {
 			display: block;	
 		}
 
