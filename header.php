@@ -1,5 +1,9 @@
 
 	<style> 
+		a {
+			display: block;	
+		}
+
 		#call {
 			transform: scale(.85);
 		}
