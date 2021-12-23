@@ -1,6 +1,6 @@
 
 	<style> 
-		a {
+		a:not(#sm-call-us p a) {
 			display: block;	
 		}
 
