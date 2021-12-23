@@ -100,7 +100,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 		<div>
 			<h1><?= $users['first_name'] . ' ' . $users['last_name']; ?> <br> <img src="<?= $users['profile_pic']; ?>"></h1>
 			<br>
-			<a href="chat.php">Message</a>
+			<!-- <a href="chat.php">Message</a> -->
 			<ul>
 				<li><h3>SCHOOL</h3> <br><br> <span><?= $users["school"]; ?></span></li>
 				<li><h3>CLASS</h3> <br><br> <span><?= $users["class"]; ?></span></li> 
