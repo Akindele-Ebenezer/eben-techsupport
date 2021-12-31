@@ -53,6 +53,7 @@ error_reporting(0);
 			</div>
 		</form>
 	 </div>
+</div>
   <?php
 	include "footer.html";
 ?>
