@@ -16,6 +16,7 @@ error_reporting(0);
 	$sql = "UPDATE users SET password = '$new_password' WHERE id = $id;";
 	$query = mysqli_query($conn, $sql);
  ?>
+<p>man</p>
  <div class="content-wrapper">
 	<div class="dashboard">
 		<ul>
