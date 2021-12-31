@@ -9,7 +9,7 @@ error_reporting(0);
 	$id = $_POST["id"];
 	$new_profile_picture = $target_file;
 	
-	$sql = "UPDATE users SET profile_pic = '$new_profile_picture' WHERE id = $id;"; 
+	$sql = "UPDATE users SET profile_pic = '$new_profile_picture' WHERE id = '$id';"; 
 	$query = mysqli_query($conn, $sql);
 	 
  ?>
