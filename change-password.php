@@ -13,16 +13,11 @@ include "page.php";
 	$new_password = $_POST["new_password"];
 	$email = $_POST["email"];
 	$tel_no = $_POST["tel_no"];
-?>
-<?php 
-/* 
-		
-	
-	$sql = "UPDATE users SET password = '$new_password' WHERE id = $id;";
-	$query = mysqli_query($conn, $sql);
-*/
- ?>
 
+
+	$sql = "UPDATE users SET password = '$new_password' WHERE id = '$id';";
+	$query = mysqli_query($conn, $sql);
+?> 
 
  <div class="content-wrapper">
 	<div class="dashboard">
