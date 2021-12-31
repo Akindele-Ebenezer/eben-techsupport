@@ -1,5 +1,9 @@
 <?php
 include "page.php";
+include "config.php";
+include "login.php";
+$title = "Change Password";
+$page_title = $title;
 ?>
 <?php 
 /*
