@@ -1,4 +1,6 @@
- <?php 
+<div id="main">
+	
+	<?php 
 error_reporting(0);
 	include "config.php";
 	include "login.php";
@@ -54,4 +56,5 @@ error_reporting(0);
   <?php
 	include "footer.html";
 ?>
+
 
