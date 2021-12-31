@@ -15,7 +15,7 @@ error_reporting(0);
 	$email = $_POST["email"];
 	$tel_no = $_POST["tel_no"];
 	
-	$sql = "UPDATE users SET first_name = '$change_first_name', last_name = '$change_last_name' WHERE id = $id;";
+	$sql = "UPDATE users SET first_name = '$change_first_name', last_name = '$change_last_name' WHERE id = '$id';";
 	$query = mysqli_query($conn, $sql);
 	//$result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	
