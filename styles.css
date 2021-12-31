@@ -606,6 +606,11 @@
 				display: none;
 			}
 			
+			form h1,
+			footer h1 {
+				margin-block: 2rem;	
+			}
+			
 			#welcome-text, #connect {
 				font-size: small;
 				max-width: 22rem;
