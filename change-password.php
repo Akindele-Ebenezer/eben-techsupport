@@ -30,7 +30,7 @@ error_reporting(0);
 			<li><a href="logout.php">Log Out</a></li>
 		</ul>
 	</div> 
-	<form action="<?php $_SERVER["PHP_SELF"]; ?>" method="post">
+	<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 		<div id="change-password-wrapper">
 			<div id="change-password-content">
 				<h1>Change Password</h1>
