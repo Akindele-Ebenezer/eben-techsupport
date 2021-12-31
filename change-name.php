@@ -20,7 +20,7 @@ error_reporting(0);
 	//$result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 	
  ?>
-<div id="main">
+ 
 	 <div class="content-wrapper">
 		<div class="dashboard">
 			<ul>
@@ -51,8 +51,7 @@ error_reporting(0);
 			</div>
 		</form>
 	 </div>
-</div>
- <?php
+  <?php
 	include "footer.html";
 ?>
 
