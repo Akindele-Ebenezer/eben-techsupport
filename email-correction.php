@@ -12,7 +12,7 @@ error_reporting(0);
 	$new_email = $_POST["new_email"];
 	$tel_no = $_POST["tel_no"];
 	
-	$sql = "UPDATE users SET email = '$new_email' WHERE id = $id;";
+	$sql = "UPDATE users SET email = '$new_email' WHERE id = '$id';";
 	$query = mysqli_query($conn, $sql);
  ?> 
  <div class="content-wrapper">
