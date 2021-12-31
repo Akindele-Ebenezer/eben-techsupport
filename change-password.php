@@ -1,12 +1,14 @@
- <?php 
-//error_reporting(0);
+
+<?php 
+/*
+error_reporting(0);
 	include "config.php";
 	include "login.php";
 	$title = "Change Password";
 	$page_title = $title;
 	include "page.php"; 
 		
-	//error_reporting(0);	
+	error_reporting(0);	
 	$id = $_POST["id"];
 	$username = $_SESSION["username"]; 
 	$new_password = $_POST["new_password"];
@@ -15,7 +17,9 @@
 	
 	$sql = "UPDATE users SET password = '$new_password' WHERE id = $id;";
 	$query = mysqli_query($conn, $sql);
+*/
  ?>
+
 
  <div class="content-wrapper">
 	<div class="dashboard">
