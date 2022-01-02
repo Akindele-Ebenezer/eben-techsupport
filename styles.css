@@ -518,8 +518,10 @@
 		}
 		 
 		#welcome-wrapper {  
+			align-items: center;
 			background: rgba(0,0,20,.37);
-			display: flex;     	
+			display: flex;  
+			justify-content: center;
 			position: relative; 		
 		}
 		
