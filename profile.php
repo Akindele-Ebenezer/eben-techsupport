@@ -251,7 +251,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 				<div id="profile-picture-note">
 						<p><strong>NOTE:</strong> You can upload your Profile Picture by clicking <a href="change-profile-picture.php">Change Profile Picture</a>. Your <strong>User Id</strong> is on your dashboard. Click on choose file, then choose the picture you want then upload the picture. Though, this is temporary and will be removed in an hour.
 						<br> <br>
-						But if you want your Picture to always show in your profile, send your picture to this whatsapp no: <a href="api.whatsapp.com/send?phone=2349052757805"><ins><strong>09052757805</strong></ins></a>. You will pay small cash for that, and changes will be made instantly.<br> <br> - For every other <strong>comments/messages/complaints</strong>, click <a href="contact.php">HERE</a> to send your messages.</p>
+						But if you want your Picture to always show in your profile, send your picture to this whatsapp no: <a href="api.whatsapp.com/send?phone=9052757805"><ins><strong>09052757805</strong></ins></a>. You will pay small cash for that, and changes will be made instantly.<br> <br> - For every other <strong>comments/messages/complaints</strong>, click <a href="contact.php">HERE</a> to send your messages.</p>
 				</div>
 			</div> 
 			<div class="profile-bg"></div>
