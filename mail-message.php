@@ -36,7 +36,7 @@
 		<div id="mail-message-content">
 			<h1>Message sent successfully...</h1>
 			<br>
-			<p>Thanks for reaching out to us, ' . ucwords($name) . '. We will get back to you as soon as possible.</p>
+			<p>Thanks for reaching out to us, '"<?= ucwords($name); "'. We will get back to you as soon as possible.</p>
 			<p>Go back to <a href="index.php">Home Page</a> or Send another <a href="contact.php">message here</a></p>
 		</div>
 	</div> 
