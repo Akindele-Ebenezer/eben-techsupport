@@ -31,7 +31,17 @@
 <?php include "page-loader.php"; ?>
 <main id="main">
 <?php include "header.php";
+	
+	$sql = "INSERT INTO admin_inbox(name, email, phone_no, subject, message, time) 
+	VALUES
+	('$name', '$email', '$phone_no', '$subject', '$message', now());";
+	$query = mysqli_query($conn, $sql); 
+	
 	$name = $_POST["name"];	
+	$email = $_POST["email"];
+	$phone_no = $_POST["phone_no"];
+	$subject = mysqli_real_escape_string($_POST["subject"]);
+	$message = mysqli_real_escape_string($_POST["message"]);
 ?>
 
 	<div id="mail-message-wrapper">
