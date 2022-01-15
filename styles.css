@@ -53,13 +53,18 @@
 		}
 
 		.admin-inbox table td {
-			border: solid moccasin;
 			padding-block: .5rem;
 			text-align: center;
 			width: 15rem;
 		}
 		.admin-inbox table th {
 			padding-inline: 2rem;
+		}
+
+		.admin-login {
+			display: flex;
+			justify-content: center;
+			margin-top: 10rem;
 		}
 
 		button,
@@ -462,10 +467,6 @@
 			top: 2rem;
 		}
 		 
-		table {
-			border-collapse: collapse;	
-		}	
-
 		#top-info { 
 			height: 4rem;
 			justify-content: flex-end; 
