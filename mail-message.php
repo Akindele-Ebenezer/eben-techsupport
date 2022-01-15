@@ -31,18 +31,19 @@
 <?php include "page-loader.php"; ?>
 <main id="main">
 <?php include "header.php";
+		
+	if(isset($_POST["contact_btn"])) {
+		
+		$name = $_POST["name"];	
+		$email = $_POST["email"];
+		$phone_no = $_POST["phone_no"];
+		$subject = mysqli_real_escape_string($conn, $_POST["subject"]);
+		$message = mysqli_real_escape_string($conn, $_POST["message"]);
+		
+		$sql = "INSERT INTO admin_inbox (name, email, phone_no, subject, message, time) VALUES ('$name', '$email', '$phone_no', '$subject', '$message', now());";
+		$query = mysqli_query($conn, $sql); 
+	}
 	
-	error_reporting(0);
-	$sql = "INSERT INTO admin_inbox(name, email, phone_no, subject, message, time) 
-	VALUES
-	('$name', '$email', '$phone_no', '$subject', '$message', now());";
-	$query = mysqli_query($conn, $sql); 
-	
-	$name = $_POST["name"];	
-	$email = $_POST["email"];
-	$phone_no = $_POST["phone_no"];
-	$subject = mysqli_real_escape_string($_POST["subject"]);
-	$message = mysqli_real_escape_string($_POST["message"]);
 ?>
 
 	<div id="mail-message-wrapper">
