@@ -30,7 +30,9 @@
 <body>
 <?php include "page-loader.php"; ?>
 <main id="main">
-<?php include "header.php"; ?>
+<?php include "header.php";
+	$name = $_POST["name"];	
+?>
 
 	<div id="mail-message-wrapper">
 		<div id="mail-message-content">
