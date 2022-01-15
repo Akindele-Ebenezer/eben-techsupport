@@ -45,6 +45,21 @@
           </table>
         </div>
       </div>
+
+      <div class="sm-screen-admin-inbox">
+      <?php foreach($result as $message): ?>
+          <div>
+            <h1><?= $message["name"]; ?></h1>
+            <ul>
+              <li>Email <span><?= $message["email"]; ?></span></li>
+              <li>Phone_no <span><?= $message["phone_no"]; ?></span></li>
+              <li>Subject <span><?= $message["subject"]; ?></span></li>
+              <li>Message <span><?= $message["message"]; ?></span></li>
+              <li>Time <span><?= $message["time"]; ?></span></li>
+            </ul>
+          </div>
+        <?php endforeach; ?>
+      </div>
 	
 <?php include "footer.html"; ?>
 </main>

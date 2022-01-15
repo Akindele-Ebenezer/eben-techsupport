@@ -417,6 +417,37 @@
 			padding: 1.5rem; 
 		}
 		
+		.sm-screen-admin-inbox {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 2rem;
+			padding: .5rem;
+		}
+
+		.sm-screen-admin-inbox div {
+			margin-block: 2rem; 
+			padding: 1.5rem;
+		}
+
+		.sm-screen-admin-inbox ul {
+			list-style-type: none;
+		}
+
+		.sm-screen-admin-inbox h1 {
+			text-align: center;
+		}
+
+		.sm-screen-admin-inbox ul li {
+			font-weight: bold;
+			padding: .4rem;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
+		}
+
+		.sm-screen-admin-inbox ul li span:before {
+			content: " : ";
+		}
 		#social-links img {
 			border-radius: 50%;
 			height: 2rem;
@@ -767,7 +798,13 @@
 			line-height: 3rem;
 			padding: 2rem;
 		}
-		   
+
+		@media(max-width: 1112px) {
+			.admin-inbox {
+				display: none;
+			}
+		}
+
 		@media (min-width: 820px) {  
 			.sm-nav-links {
 				display: none;
