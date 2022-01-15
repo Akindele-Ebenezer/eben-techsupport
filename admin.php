@@ -12,9 +12,14 @@
 <?php  
 	include "config.php"; 
 	include "header.php";
-?>
- 
-  <div class="admin-inbox">
+    session_start();
+    if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+      header("location: admin-login.php");
+      exit;
+    }
+?> 
+
+  <div class="admin-inbox"> 
         <div>
           <table>
             <tr>
