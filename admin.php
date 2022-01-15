@@ -18,6 +18,7 @@
         <div>
           <table>
             <tr>
+              <th>ID</th>
               <th>NAME</th>
               <th>EMAIL</th>
               <th>PHONE_NO</th>
@@ -34,6 +35,7 @@
 
         foreach($result as $message): ?>
             <tr>
+              <td><?= $message["id"]; ?></td>
               <td><?= $message["name"]; ?></td>
               <td><?= $message["email"]; ?></td>
               <td><?= $message["phone_no"]; ?></td>
@@ -51,6 +53,7 @@
           <div>
             <h1><?= $message["name"]; ?></h1>
             <ul>
+              <li>ID <span><?= $message["id"]; ?></span></li>
               <li>Email <span><?= $message["email"]; ?></span></li>
               <li>Phone_no <span><?= $message["phone_no"]; ?></span></li>
               <li>Subject <span><?= $message["subject"]; ?></span></li>
