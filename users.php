@@ -103,7 +103,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 			<!-- <a href="chat.php">Message</a> -->
 			<ul>
 				<li><h3>SCHOOL</h3> <br><br> <span><?= $users["school"]; ?></span></li>
-				<li><h3>CLASS</h3> <br><br> <span><?= $users["class"]; ?></span></li> 
+				<li><h3>CLASS/LEVEL</h3> <br><br> <span><?= $users["class"]; ?></span></li> 
 				<li><h3>GENDER</h3> <br><br> <span><?= $users["gender"]; ?></span></li>
 				<li><h3>OCCUPATION</h3> <br><br> <span><?= $users["occupation"]; ?></span></li>
 				<li><h3>DEPARTMENT</h3> <br><br> <span><?= $users["department"]; ?></span></li>
