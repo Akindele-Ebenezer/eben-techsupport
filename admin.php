@@ -15,13 +15,6 @@
 ?>
  
   <div class="admin-inbox">
-    <?php
-
-    $sql = "SELECT * FROM admin_inbox;";
-    $query = mysqli_query($conn, $sql);
-    $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
-
-    foreach($result as $message): ?>
         <div>
           <table>
             <tr>
@@ -32,6 +25,14 @@
               <th>MESSAGE</th>
               <th>TIME</th>
             </tr>
+            
+            <?php
+
+        $sql = "SELECT * FROM admin_inbox;";
+        $query = mysqli_query($conn, $sql);
+        $result = mysqli_fetch_all($query, MYSQLI_ASSOC); 
+
+        foreach($result as $message): ?>
             <tr>
               <td><?= $message["name"]; ?></td>
               <td><?= $message["email"]; ?></td>
@@ -40,9 +41,9 @@
               <td><?= $message["message"]; ?></td>
               <td><?= $message["time"]; ?></td>
             </tr>
+            <?php endforeach; ?>
           </table>
         </div>
-      <?php endforeach; ?>
       </div>
 	
 <?php include "footer.html"; ?>
