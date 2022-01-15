@@ -10,6 +10,7 @@
 <?php //include "page-loader.php"; ?>
 <main id="main">
 <?php  
+    error_reporting(0);
 	include "config.php"; 
 	include "header.php";
 
@@ -19,6 +20,14 @@
         
         $sql = "SELECT * FROM users WHERE username = 'tobi.akindele@gmail.com' and password = '$password';";
         $query = mysqli_query($conn, $sql); 
+
+        if(empty($email)) {
+            $email_error = "Enter Email";
+        } elseif(empty($password)) {
+            $password_error = "Enter Password";
+        } else {
+            $wrong_credentials = "Wrong Email/Password";
+        }
 
         if(mysqli_num_rows($query) == 1) {
             session_start();
@@ -32,8 +41,11 @@
 <form class="admin-login" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
     <div>
         <h1>Admin Login</h1>
+        <br><span><?= $wrong_credentials; ?></span>
+        <br><span><?= $email_error; ?></span><br>
         <input type="email" name="email" placeholder="Email"><br><br>
-        <input type="password" name="password" placeholder="Password"><br><br>
+        <br><span><?= $password_error; ?></span><br>
+        <input type="password" name="password" placeholder="Password"></span><br><br>
         <button type="submit" name="submit">Login</button>
     </div>
 </form>
