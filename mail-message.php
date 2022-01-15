@@ -32,6 +32,7 @@
 <main id="main">
 <?php include "header.php";
 	
+	error_reporting(0);
 	$sql = "INSERT INTO admin_inbox(name, email, phone_no, subject, message, time) 
 	VALUES
 	('$name', '$email', '$phone_no', '$subject', '$message', now());";
