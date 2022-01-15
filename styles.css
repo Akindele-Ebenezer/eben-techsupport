@@ -799,6 +799,12 @@
 			padding: 2rem;
 		}
 
+		@media(min-width: 1112px) {
+			.sm-screen-admin-inbox {
+				display: none;
+			}
+		}
+
 		@media(max-width: 1112px) {
 			.admin-inbox {
 				display: none;
