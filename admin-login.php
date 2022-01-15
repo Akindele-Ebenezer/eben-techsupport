@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<?php include "page-loader.php"; ?>
+<?php //include "page-loader.php"; ?>
 <main id="main">
 <?php  
     error_reporting(0);
@@ -53,6 +53,6 @@
 	
 <?php include "footer.html"; ?>
 </main>
-<?php include "page-loader-script.php"; ?>
+<?php //include "page-loader-script.php"; ?>
 </body>
 </html>
