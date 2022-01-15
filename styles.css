@@ -207,7 +207,8 @@
 			font-style: italic;
 		}			
 		 
-		#form-wrapper span {
+		#form-wrapper span,
+		form span {
 			color: red;
 		}
 		
