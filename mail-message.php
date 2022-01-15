@@ -30,8 +30,12 @@
 <body>
 <?php include "page-loader.php"; ?>
 <main id="main">
-<?php include "header.php";
-		
+<?php  
+	include "config.php"; 
+	include "header.php";
+	
+	//error_reporting(0); 
+
 	if(isset($_POST["contact_btn"])) {
 		
 		$name = $_POST["name"];	
@@ -39,11 +43,11 @@
 		$phone_no = $_POST["phone_no"];
 		$subject = mysqli_real_escape_string($conn, $_POST["subject"]);
 		$message = mysqli_real_escape_string($conn, $_POST["message"]);
-		
 		$sql = "INSERT INTO admin_inbox (name, email, phone_no, subject, message, time) VALUES ('$name', '$email', '$phone_no', '$subject', '$message', now());";
-		$query = mysqli_query($conn, $sql); 
+		$query = mysqli_query($conn, $sql);
+
+		echo $name;
 	}
-	
 ?>
 
 	<div id="mail-message-wrapper">

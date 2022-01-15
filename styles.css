@@ -43,6 +43,24 @@
 			margin-top: .3rem;
 		}	
 		  
+		.admin-inbox {
+			padding-block: 10rem;
+		}
+
+		.admin-inbox > div {
+			display: flex;
+			justify-content: center;
+		}
+
+		.admin-inbox table td {
+			padding-block: .5rem;
+			text-align: center;
+			width: 15rem;
+		}
+		.admin-inbox table th {
+			padding-inline: 2rem;
+		}
+
 		button,
 		input {
 			width: 20rem;
