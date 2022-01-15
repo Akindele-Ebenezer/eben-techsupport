@@ -49,5 +49,7 @@
 		</nav>
 	</header>
 	
-	<?php include "header-sm-screen.html"; ?>
+	<?php include "header-sm-screen.html"; 
+	      include "config.php"; 
+	?>
  
