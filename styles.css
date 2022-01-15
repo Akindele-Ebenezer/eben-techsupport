@@ -237,7 +237,8 @@
 			border-right: 0;
 			border-top: 0;
 			font-size: 1.3rem;
-			height: 2rem;  
+			height: 2rem; 
+			margin-block: 1.5rem;
 		}
 		
 		input:focus {
